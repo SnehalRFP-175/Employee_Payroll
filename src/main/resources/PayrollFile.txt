@@ -1,0 +1,4 @@
+ID:1	 Name:Snehal	 Salary:10000.0
+ID:2	 Name:Pranit	 Salary:20000.0
+ID:3	 Name:Prachi	 Salary:30000.0
+ID:4	 Name:Puja	 Salary:35000.0
