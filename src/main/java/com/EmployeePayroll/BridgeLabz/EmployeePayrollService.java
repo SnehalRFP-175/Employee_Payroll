@@ -37,7 +37,7 @@ public class EmployeePayrollService {
 
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 
-        employeePayrollFilelOService.printData();
+        employeePayrollFilelOService.readData();
         employeePayrollService.countEntries();
 
         EmployeePayrollFilelOService fileIO = new EmployeePayrollFilelOService();
