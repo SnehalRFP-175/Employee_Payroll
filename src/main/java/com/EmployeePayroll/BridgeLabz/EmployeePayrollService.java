@@ -13,11 +13,12 @@ public class EmployeePayrollService {
     private List<EmployeePayroll> employeePayrollList;
     public enum IOService {CONSOLE_IO, FILE_IO, DB_IO, REST_IO};
 
-    public EmployeePayrollService()
+        public EmployeePayrollService()
     {
         employeePayrollList = new ArrayList<EmployeePayroll>();
     }
 
+    //counting the Number of Entries
     public long countEntries() {
         long entries = 0;
         try {
@@ -32,9 +33,11 @@ public class EmployeePayrollService {
     public static void main(String[] args) {
         System.out.println("Employee payroll service program Running Successfully...");
 
+        EmployeePayrollFilelOService employeePayrollFilelOService = new EmployeePayrollFilelOService();
 
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 
+        employeePayrollFilelOService.printData();
         employeePayrollService.countEntries();
 
         EmployeePayrollFilelOService fileIO = new EmployeePayrollFilelOService();
