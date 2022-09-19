@@ -17,6 +17,17 @@ public class EmployeePayrollService {
     {
         this.employeelist = employeelist;
     }
+
+    public static boolean deleteFiles(File contentsToDelete) {
+        File[] allContents = contentsToDelete.listFiles();
+        if (allContents != null){
+            for (File file : allContents){
+                deleteFiles(file);
+            }
+        }
+        return contentsToDelete.delete();
+    }
+
     public void readEmployeeData()
     {
         Scanner sc = new Scanner(System.in);
